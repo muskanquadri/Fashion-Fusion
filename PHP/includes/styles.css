@@ -1,0 +1,472 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Center the login container */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Zigzag layout for images */
+#suggestions div {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+#suggestions div img {
+    width: 200px; /* Set a consistent image size */
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Styling for quotes or description */
+#suggestions div p {
+    max-width: 50%;
+    margin: 0 20px;
+    text-align: left;
+}
+
+/* Colorful Explore Button */
+.explore-button {
+    background-color: #3498db; /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #2980b9; /* Hover state color */
+}
+
+/* Container for images and quotes */
+.image-quote-container {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center; /* Center text inside the container */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Background gradient color */
+}
+
+    
+    /* Center the login container */
+    .center-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
+    }
+    
+    /* Zigzag layout for images */
+    #suggestions div {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+        justify-content: space-between;
+    }
+    
+    #suggestions div img {
+        width: 200px; /* Set a consistent image size */
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    
+    /* Styling for quotes or description */
+    #suggestions div p {
+        max-width: 50%;
+        margin: 0 20px;
+        text-align: left;
+    }
+    
+    /* Colorful Explore Button */
+    .explore-button {
+        background-color: #3498db; /* Button color */
+        color: hsl(253, 75%, 46%);
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .explore-button:hover {
+        background-color: #2980b9; /* Hover state color */
+    }
+   
+    .login-container {
+        width: 300px; /* Adjust width as needed */
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        text-align: center; /* Center text inside the container */
+        color: #faf7f7;
+        background: linear-gradient(to right, #d20d79, #048634); /* Background gradient color */
+    }
+    
+    .login-container h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #f3eeee;
+    }
+    
+    .login-container form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .login-container label {
+        margin-bottom: 5px;
+        text-align: left;
+        color: #f9f7f7;
+    }
+    
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        color: #efeeee
+        ;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+    
+    .login-container button {
+        padding: 10px;
+        border: none;
+        background-color: #28a745; /* Button background color */
+        color: #fff;
+        border-radius: 3px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .login-container button:hover {
+        background-color: #218838; /* Button hover color */
+    }
+    
+    .login-container p {
+        margin-top: 10px;
+        color: #efeeee;
+    }
+    
+    .login-container a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+    
+    .login-container a:hover {
+        text-decoration: underline;
+    }
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between items */
+}
+
+/* Style for individual product items */
+.product-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px; /* Add padding to the items */
+    border: 1px solid #ccc; /* Optional: add a border */
+    text-align: center; /* Center align the text */
+}
+
+/* Ensure images fit within their containers and have the same size */
+.product-item img {
+    max-width: 100%;
+    height: 700px; /* Set a fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio, cropping if necessary */
+}
+
+/* Style for headings */
+.product-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Style for descriptions */
+.product-item p.description {
+    font-size: 1em;
+    color: #777;
+    max-height: 100px; /* Optional: limit the description height */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Add ellipsis for overflow content */
+}
+
+/* Style for prices */
+.product-item p.price {
+    font-size: 1.1em;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Style for buttons */
+.product-item button {
+    background-color: #ff6f61; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for buttons */
+.product-item button:hover {
+    background-color: #e65e50; /* Slightly darker color on hover */
+}
+
+/* Responsive breakpoints for smaller screens */
+@media (max-width: 768px) {
+    .product-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        flex: 1 1 100%; /* 1 item per row */
+    }
+}
+/* Layout for the categories grid */
+.categories-items {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ensures 2 images per row */
+    gap: 10px;
+    text-align: center;
+    color: #333;
+}
+
+/* Style for each category item */
+.category {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style for category images */
+.category img {
+    width: 100%;
+    height: auto; /* Ensures aspect ratio is maintained */
+    object-fit: contain;
+}
+
+/* Style for colorful buttons */
+button {
+    background-color: #4c08aa; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Define different colors for each button */
+.category:nth-child(odd) button {
+    background-color: #a310e7; /* Example color */
+}
+
+.category:nth-child(even) button {
+    background-color: #12b8d9; /* Example color */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #064e4d; /* Slightly darker color on hover */
+}
+
+/* Responsive breakpoints for smaller screens */
+@media (max-width: 768px) {
+    .categories-items {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .categories-items {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+}
+
+
+
+
+/* Cart Items Section */
+.cart-items {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.cart-items h2 {
+    grid-column: span 2;
+    text-align: center;
+    color: #333;
+}
+
+.cart-items div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center
+    
+}
+
+.cart-items img {
+    width: 150px;
+    max-width: 250px;
+    height: auto; /* Ensures aspect ratio is maintained */
+    object-fit: contain;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Ensure that images in two rows remain of equal size */
+.cart-items img {
+    max-width: 100%;
+    height: auto; /* Ensures aspect ratio is maintained */
+}
+/* wishlist-Items Section */
+.wishlist-items {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.wishlist-items h2 {
+    grid-column: span 2;
+    text-align: center;
+    color: #333;
+}
+
+.wishlist-items div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center
+    
+}
+
+.wishlist-items img {
+    width: 150px;
+    max-width: 250px;
+    height: auto; /* Ensures aspect ratio is maintained */
+    object-fit: contain;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Ensure that images in two rows remain of equal size */
+.wishlist-items img {
+    max-width: 100%;
+    height: auto; /* Ensures aspect ratio is maintained */
+}
